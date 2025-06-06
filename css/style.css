@@ -1,0 +1,320 @@
+/* ---------------Common Css------------- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #141414 url(https://unsplash.it/1228/880?image=302);
+    background-size: cover; 
+    background-position: 50%;
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* ---------------Main Start------------- */
+
+.main{
+  padding: 30px;
+  background-color: transparent;
+  width: 90%;
+  height: 70%;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgb(143, 143, 143);
+}
+/* Input------------------ */
+.all_input{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.input-wrapper {
+  width: fit-content;
+  height: 45px;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  background-color: #292524;
+  margin-bottom: 70px;
+}
+
+.icon {
+  width: 30px;
+  fill: rgb(255, 255, 255);
+  margin-left: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.input {
+  max-width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  background-color: #292524;
+  color: white;
+  font-size: 1em;
+}
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+  -webkit-text-fill-color: #ffffff;
+}
+.Subscribe-btn {
+  height: 100%;
+  width: 95px;
+  border: none;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  background-color: #ffffff;
+  font-weight: 500;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s;
+}
+.arrow {
+  position: absolute;
+  margin-right: 150px;
+  transition: all 0.3s;
+}
+.input-wrapper:active .icon {
+  transform: scale(1.3);
+}
+.Subscribe-btn:hover {
+  color: white;
+}
+.Subscribe-btn:hover .arrow {
+  margin-right: 0;
+  animation: jello-vertical 0.9s both;
+  transform-origin: right;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.Subscribe-btn:active {
+  transform: scale(0.9);
+}
+/* Number---------------- */
+.input_div{
+  position: relative;
+  height: 200px;
+}
+.text {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 6em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+/* Button---------------- */
+.CounterSpeed{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+}
+.messageBox {
+  width: fit-content;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DCDCDC;
+  backdrop-filter: blur(10px);
+  padding: 0 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(63, 63, 63);
+}
+.messageBox:focus-within {
+  border: 1px solid rgb(110, 110, 110);
+}
+#messageInput {
+    width: 300px;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    color: #141414;
+}
+#messageInput:focus ~ #sendButton svg path,
+#messageInput:valid ~ #sendButton svg path {
+  fill: #3c3c3c;
+  stroke: white;
+}
+
+#sendButton {
+  width: fit-content;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#sendButton svg {
+  height: 18px;
+  transition: all 0.3s;
+}
+#sendButton svg path {
+  transition: all 0.3s;
+}
+#sendButton:hover svg path {
+  fill: #3c3c3c;
+  stroke: white;
+}
+
+/* Error Tag--------------- */
+.Counter_error{
+  display: none;
+}
+.ReloadPage{
+  margin-top: 50px;
+}
+.tv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tv-screen {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  background: black;
+  border: 10px solid #333;
+  border-radius: 10px;
+  box-shadow:
+    0 0 20px rgba(0, 0, 0, 0.8),
+    inset 0 0 50px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.static {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    #000,
+    #000 1px,
+    #111 1px,
+    #fff 1px,
+    #333 2px
+  );
+  animation: flicker 0.1s steps(20) infinite;
+  z-index: 1;
+}
+
+.error-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px black;
+  z-index: 2;
+  animation: glitch 0.5s infinite;
+}
+
+.tv-stand {
+  width: 250px;
+  height: 20px;
+  background: #333;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.8;
+    transform: scaleY(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1.01);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scaleY(0.99);
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(-50%, -50%) skewX(5deg);
+    opacity: 0.9;
+  }
+  25% {
+    transform: translate(-50%, -50%) skewX(-5deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-50%, -50%) skewX(0deg);
+    opacity: 1;
+  }
+  75% {
+    transform: translate(-50%, -50%) skewX(-5deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) skewX(5deg);
+    opacity: 0.9;
+  }
+}
