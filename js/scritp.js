@@ -29,7 +29,7 @@ let HandelButton1 = ()=>{
             clearInterval(StopInterval1)
         }
     }
-
+    
     let StopInterval1 = setInterval(MyCounter1 , InputSpeed.value)
 }
 // Counter2--------------------
@@ -112,7 +112,31 @@ let HandelButton4 = ()=>{
 
 // Counter Clear--------------------
 
+ClearInputSvg.forEach((items)=>{
 
+    items.addEventListener('click', ()=>{
+        // ----All i----
+        i = 0 
+        i2 = 0 
+        i3 = 0 
+        i4 = 0 
+
+        // ---Counter Number---
+        CounterText.innerHTML = 0
+        CounterText2.innerHTML = 0
+        CounterText3.innerHTML = 0
+        CounterText4.innerHTML = 0
+
+        // ---Counter Input---
+        CounterInput.value = ''
+        CounterInput2.value = ''
+        CounterInput3.value = ''
+        CounterInput4.value = ''
+
+        // ---Counter Speed---
+        InputSpeed.value = ''
+    })
+})
 
 
 
