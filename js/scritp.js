@@ -13,15 +13,24 @@ let i2 = 0
 let i3 = 0
 let i4 = 0
 
+
 // Counter2--------------------
 let CounterText2  = document.querySelector('.Counter2')
 let CounterButton2 = document.querySelector('.Subscribe-btn2')
 let CounterInput2  = document.querySelector('.input2')
 
+
+
+
 // Counter3--------------------
 let CounterText3  = document.querySelector('.Counter3')
 let CounterButton3 = document.querySelector('.Subscribe-btn3')
 let CounterInput3  = document.querySelector('.input3')
+
+
+
+
+
 
 // Counter3--------------------
 let CounterText4  = document.querySelector('.Counter4')
@@ -32,6 +41,15 @@ let CounterInput4  = document.querySelector('.input4')
 
 
 // Counter Clear--------------------
+
+
+
+
+
+
+
+
+
 
 
 // Practice 15---------------------
