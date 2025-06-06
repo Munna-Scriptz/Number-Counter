@@ -13,7 +13,26 @@ let i2 = 0
 let i3 = 0
 let i4 = 0
 
+let HandelButton1 = ()=>{
+    if(CounterInput.value == ''){
+        AllMighty.style  = 'display:none;'
+        InputError.style = 'display:block;'
+        TheBody.style    = 'background: url(https://cdn.dribbble.com/userupload/23438801/file/original-524952a81a8523e762c8a8042afaba4e.gif);'
+    }
 
+    let MyCounter1 = ()=>{
+
+        i++
+        CounterText.innerHTML = i
+    
+        if( i == CounterInput.value){
+            clearInterval(StopInterval1)
+        }
+    }
+
+    let StopInterval1 = setInterval(MyCounter1 , InputSpeed.value)
+    CounterInput.value = ''
+}
 // Counter2--------------------
 let CounterText2  = document.querySelector('.Counter2')
 let CounterButton2 = document.querySelector('.Subscribe-btn2')
