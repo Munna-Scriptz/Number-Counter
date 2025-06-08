@@ -2,7 +2,7 @@
 
 Live Demo: View Here <!-- Replace '#' with your live demo link if available -->
 
-🚀 Overview
+🚀 Here is the of this project Overview
 
 The Number Counter Animation is a sleek and responsive web component that dynamically animates numbers counting up to a target value. Built with HTML, CSS, and JavaScript, this project is perfect for enhancing dashboards, landing pages, or any section where showcasing statistics is essential. 
 
@@ -17,7 +17,7 @@ The Number Counter Animation is a sleek and responsive web component that dynami
 ⚙️ Lightweight & Efficient: Minimal codebase ensures quick load times and performance.
 
 
-🛠️ Technologies Used
+🛠️ Technologies Used-
 
 HTML5: Semantic structuring of content.
 
