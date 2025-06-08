@@ -60,22 +60,13 @@ cd Number-Counter
 Simply double-click the index.html file or open it using your preferred web browser to view the counter in action.
 
 
-
-📸 Screenshots
-
- <!-- Replace with actual screenshot path -->
-
 📬 Contact
 
 For any inquiries or feedback:
 
 Email: [munnascriptz@gmail.com]
 
-LinkedIn: Your LinkedIn Profile
-
-Twitter: @yourhandle
-
-
+LinkedIn: -----
 
 ---
 
