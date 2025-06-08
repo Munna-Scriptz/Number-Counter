@@ -43,16 +43,9 @@ Number-Counter/
 
 git clone https://github.com/Munna-Scriptz/Number-Counter.git
 
-
-
-
-
 2. Navigate to the Project Directory:
 
 cd Number-Counter
-
-
-
 
 
 3. Open index.html in Your Browser:
