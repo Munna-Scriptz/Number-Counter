@@ -59,9 +59,4 @@ For any inquiries or feedback:
 
 Email: [munnascriptz@gmail.com]
 
-LinkedIn: -----
-
----
-
-Feel free to customize this README.md further to align with your project's specifics and personal branding. If you need assistance with adding a live demo link or deploying the project, let me know! 🚀
-
+LinkedIn: https://www.linkedin.com/in/munna-scripts-25287635b?trk=contact-info
